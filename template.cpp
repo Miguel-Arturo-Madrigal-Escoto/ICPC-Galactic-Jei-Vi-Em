@@ -5,6 +5,8 @@
 #define sz(s) int(s.size())
 #define pb push_back
 #define pba pop_back
+#define f first
+#define s second
 #define all(s) begin(s),end(s)
 #define ENDL '\n'
 
