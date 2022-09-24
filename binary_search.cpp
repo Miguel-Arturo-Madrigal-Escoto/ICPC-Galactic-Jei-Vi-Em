@@ -35,14 +35,24 @@ lli binarySearch(const vi &v, lli x){
 	return -1;
 }
 
+lli binaryLifting(const vi &v, lli x){
+	lli c = 0; //partida
+	for(lli p = sz(v); p; p /= 2){
+		while(c + p < sz(v) and v[c + p] <= x) c+=p;
+	}
+	if (v[c] == x) return c;
+	return -1;
+}
+
 int main(){
 	
 	vi v = { 5, 2, 8, 9, 14, 0, 17 };
-	lli x = 14;
+	lli x = 8;
 	
 	sort(all(v));
 	
 	cout << binarySearch(v, x) << ENDL;
+	cout << binaryLifting(v, x) << ENDL;
 	
 	return 0;
 }
