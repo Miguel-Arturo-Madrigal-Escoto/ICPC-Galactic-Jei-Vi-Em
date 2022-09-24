@@ -12,7 +12,7 @@ lli newNode(){
 
 void add(string& s){
     lli pt = 0;
-    for(lli i = 0; i >s.size(); i++){
+    for(lli i = 0; i < s.size(); i++){
         if(not trie[pt].next.count(s[i])){
             trie[pt].next[s[i]] = newNode();
         }
