@@ -16,6 +16,10 @@ void makeCriba(int x){
     }
 }
 
+// Criba que saca la suma de los divisores de un numero n.
+// En el ejemplo pide varios numeros y del más grande construye la criba, y solo consulta
+// el número n del cual se quiere saber la suma de sus divisores. (Nota: el mismo numero en este caso se
+// le quito en la suma de divisores)
 
 int main()
 {
